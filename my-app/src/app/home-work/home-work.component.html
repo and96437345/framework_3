@@ -1,0 +1,28 @@
+<h2>
+    Задание 1
+</h2>
+<h2>
+    Добавьте к уже существующему приложению «Персональная
+    страница» pipes. Используйте CurrencyPipe, PercentPipe.
+</h2>
+
+<span>{{ currency1 | currency: 'RUB':'symbol-narrow' }}</span>
+<span>=</span>
+<span>{{ currency2 | currency: 'EUR':'symbol-narrow' }}</span>
+
+<div>{{ percent1 | percent:'4.0-5' }}</div>
+<div>{{ percent2 | percent }}</div>
+
+<h2>
+    Задание 2
+</h2>
+<h2>
+    Добавьте к уже существующему приложению «Персональная
+    страница» использование директив ngIf, ngSwitch, ngFor.
+</h2>
+
+@if (currency1 > 0) {
+    isTrue = true;
+}
+
+<h2>{{ isTrue }}</h2>

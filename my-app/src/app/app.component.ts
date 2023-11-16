@@ -5,11 +5,12 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MyExperienceComponent } from './my-experience/my-experience.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyPhotoComponent } from './my-photo/my-photo.component';
+import { HomeWorkComponent } from './home-work/home-work.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MyExperienceComponent, MySkillsComponent, MyPhotoComponent, AboutMeComponent],
+  imports: [CommonModule, RouterOutlet, MyExperienceComponent, MySkillsComponent, MyPhotoComponent, AboutMeComponent, HomeWorkComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
