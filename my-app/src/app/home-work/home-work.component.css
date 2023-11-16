@@ -5,3 +5,7 @@ span {
 div {
     font-size: 25px;
 }
+ul {
+    font-size: 25px;
+    list-style: none;
+}

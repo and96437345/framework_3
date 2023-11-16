@@ -22,7 +22,56 @@
 </h2>
 
 @if (currency1 > 0) {
-    isTrue = true;
+    <h2>
+        {{ currency1 | currency: 'RUB':'symbol-narrow' }} больше 0
+    </h2>
+} @else {
+    <p>
+        {{ currency1 | currency: 'RUB':'symbol-narrow' }} меньше или равно 0
+    </p> 
 }
 
-<h2>{{ isTrue }}</h2>
+@switch (day) {
+    @case (1) {
+        <span>Понедельник</span>
+    }
+    
+    @case (2) {
+        <span>Вторник</span>
+    }
+
+    @case (3) {
+        <span>Среда</span>
+    }
+
+    @case (4) {
+        <span>Четверг</span>
+    }
+
+    @case (5) {
+        <span>Пятница</span>
+    }
+
+    @case (6) {
+        <span>Суббота</span>
+    }
+
+    @case (7) {
+        <span>Воскресенье</span>
+    }
+
+    @default {
+        <span>Нет такого дня недели</span>
+    }
+  }
+
+<ul>
+    <div>List of students WEB31:</div>
+    @for (student of students; track student) {
+        <li> {{ student }} </li>
+      } @empty {
+        <li> There are no items. </li>
+      }
+</ul>
+
+
